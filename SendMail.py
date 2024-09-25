@@ -10,5 +10,5 @@ content = '''
 This is the content for side for sending mail
 '''
 yag = yagmail.SMTP(user=sender, password=os.getenv('PASSWORD'))
-yag.send(to=receiver, subject=subject, contents=contents)
+yag.send(to=receiver, subject=subject, contents=content)
 print("Email send!")
